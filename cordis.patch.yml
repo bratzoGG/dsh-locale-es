@@ -1,0 +1,6 @@
+# Parche de bundle: aporta la fila del Loader que monta el paquete de idioma.
+# Va como lista `insert` a propósito: una fila `- id:` solo sobrescribe una
+# entrada existente y, si el id no existe, el cargador aborta todo el parche.
+- insert:
+    - id: locale-es
+      name: 'dsh-locale-es'

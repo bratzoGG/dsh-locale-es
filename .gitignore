@@ -1,0 +1,21 @@
+# dependencias
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# artefactos de prueba
+*.zip
+dsh-extract/
+dshtest-home/
+probe/
+
+# sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# editores
+.vscode/
+.idea/
+*.swp

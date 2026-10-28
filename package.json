@@ -1,0 +1,49 @@
+{
+  "name": "dsh-locale-es",
+  "version": "1.0.0",
+  "description": "Paquete de idioma español para DeepSeek Harness: la interfaz en español con un solo comando",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "locale",
+    "language-pack",
+    "spanish",
+    "espanol",
+    "es",
+    "i18n"
+  ],
+  "scripts": {
+    "check": "node scripts/build-pack.js --check",
+    "build": "node scripts/build-pack.js",
+    "extract": "node scripts/extract-dicts.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
